@@ -1,4 +1,28 @@
 
-body{
+*{
+    margin: 0;
+    padding: 0;
+}
 
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: white;
+    color: black; 
+}
+
+/* Navigation Bar */
+ul{
+    list-style-type: none;
+}
+
+.nav-links,
+nav{
+    display: flex;
+}
+
+.nav-links{
+    background-color: red;
 }
