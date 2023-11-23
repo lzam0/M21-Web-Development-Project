@@ -64,6 +64,20 @@ ul{
     font-weight: bold;
   }
 
+  /* Section */
+
+  section{
+    padding-top: 4vh;
+    height: 96vh;
+    margin: 0 10rem;
+    box-sizing: border-box;
+    min-height: fit-content;
+}
+
+.section-container{
+    display: flex;
+}
+
   /* Goal */
 
   .goal-image{
@@ -90,4 +104,17 @@ legend{
     padding: 5px;
     font-size: medium;
     word-spacing: 4px;
+}
+
+/* Footer */
+
+footer {
+    background-color: black;
+    height: 3vh;
+    padding: 5rem;
+  }
+
+footer p{
+    text-align: center;
+    color: white;
 }
