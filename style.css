@@ -70,3 +70,24 @@ ul{
     height: 10px;
     width: auto;
   }
+
+  /* Form */
+
+  fieldset{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    margin-right: 2%;
+    margin-left: auto;
+    width: 50%;
+    border: 20px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 5px;
+}
+
+legend{
+    padding: 5px;
+    font-size: medium;
+    word-spacing: 4px;
+}
