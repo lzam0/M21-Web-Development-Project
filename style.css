@@ -5,12 +5,13 @@
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body{
-    background-color: white;
-    color: black; 
+  font-family: 'Montserrat', sans-serif;
+  background-color: white;
+  color: black; 
 }
 
 
@@ -20,11 +21,13 @@ header{
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 25vh;
+  height: 35vh;
   color: white;
-  background: grey;
-  border: black 0.1rem solid;
   font-size: 30px;
+
+  background-image: url(./images/banner.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 /* Navigation Bar */
@@ -35,37 +38,34 @@ ul{
 nav,
 .nav-link{
   display: flex;
-}
-  
-nav{
   height: 60px;
   justify-content: space-around;
   align-items: center;
-}
+  background-color: black;
+  }
   
-.nav-link{
-  gap: 25px;
-  list-style: none;
-  font-size: 20px;
-}
+  .nav-link {
+    list-style: none;
+    font-size: 20px;
+  }
   
-/* When Navigation is active */
-.active{
+  .nav-link a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: white;
+  }
+  
+  /* When Navigation is active */
+  .active {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #84bc41;
     
-}
-
-a{
-  color: black;
-  text-decoration: none;
-  text-decoration-color: white;
-}
-  
-a:hover{
-  color:grey;
-}
+  }
 
 .logo{
   font-weight: bold;
+  color: white;
 }
 
 /* Containers for website */
@@ -113,27 +113,24 @@ a:hover{
 
 /* Form */
 
-fieldset{
-  display: flex;
-  flex-wrap: wrap;
-  margin: auto;
-  margin-right: 2%;
-  margin-left: auto;
-  border: 1px;
-  border-style: solid;
-  border-color: black;
-  border-radius: 5px;
+#form h1{
+  color: black;
+  padding-top: 10px;
+  text-align: center;
+  font-size: 60px;
 }
 
-form{
-
+#form input{
+  width: 70%;
+  margin-left: 12%;
 }
 
-legend{
-  padding: 5px;
-  font-size: medium;
-  word-spacing: 4px;
+#form p{
+  color: black;
+  text-align: center;
 }
+
+
 
 /* Footer */
 
