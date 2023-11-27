@@ -1,4 +1,15 @@
 
+/* main colours
+
+main green - #84bc41
+second green - #cde4b3
+
+yellow contrast - #f9c416
+
+main blue - 	#099ec8
+second blue - #9cd8e9
+
+*/
 *{
     margin: 0;
     padding: 0;
@@ -122,9 +133,9 @@ nav,
   font-size: 60px;
 }
 
-#form input{
-  width: 70%;
-  margin-left: 12%;
+#form input, label{
+  width: 50%;
+  margin-left: 25%;
   padding: 15px 15px;
   font-size: 20px;
   border-radius: 20px;
@@ -133,29 +144,32 @@ nav,
 }
 
 #form textarea{
-  width: 70%;
-  margin-left: 12%;
+  width: 50%;
+  margin-left: 25%;
   padding: 15px 15px;
   font-size: 20px;
   border-radius: 20px;
   margin-bottom: 20px;
   margin-top: 5px;
+  border: 2px solid black;
 }
 
-#form button{
+#form #submit{
   text-align: center;
   display: flex;
   margin: auto;
   border-radius: 20px;
-  padding: 15px 15px;
-  color: #fff;
+  padding: 20px 20px;
+  font-weight: bold;
+  color: black;
   background-color: #84bc41;
 }
 
-#form button:hover{
+#form #submit:hover{
   color: black;
   background-color: #fff;
   border-color: #84bc41;
+  cursor: pointer;
 }
 
 #form p{

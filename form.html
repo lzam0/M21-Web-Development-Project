@@ -31,12 +31,24 @@
         <div class="container">
             <form id="form">
                     <h1 class="test">Connect with us!</h1>
-                    <p>All areas with an * must be filled</p>
-                    <input type="text" name="first" placeholder="John">
-                    <input type="text" name="last" placeholder="Doe">
-                    <input type="text" name="email" placeholder="contactus@email.com">
-                    <textarea rows="5" cols="50" name="message" placeholder="Enter text"></textarea>
-                    <button class="submit">Submit</button>
+                    <p>Required information is marked with an asterisk(*)</p>
+
+                    <!-- First Name -->
+                    <label for="first">First Name*: </label>
+                    <input type="text" id="first" name="first" placeholder="John" aria-required="true">
+                    
+                    <!-- Last Name -->
+                    <label for="last">Last Name*: </label>
+                    <input type="text" id="last" name="last" placeholder="Doe" aria-required="true">
+
+                    <!-- Email -->
+                    <label for="email">Email*: </label>
+                    <input type="text" id="email" name="email" placeholder="Your Email" aria-required="true">
+
+                    <!-- Enter a message -->
+                    <label for="message">Message*: </label>
+                    <textarea rows="5" cols="50" name="message" placeholder="Enter text" required aria-required="true"></textarea>
+                    <button id="submit">Submit</button>
             </form>
         </div>
     </main>
