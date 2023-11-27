@@ -54,6 +54,10 @@ nav,
     text-decoration: none;
     color: white;
   }
+
+  .nav-link a:hover{
+    color: #84bc41;
+  }
   
   /* When Navigation is active */
   .active {
@@ -63,21 +67,19 @@ nav,
     
   }
 
-.logo{
-  font-weight: bold;
-  color: white;
-}
+  .logo{
+    font-weight: bold;
+    color: white;
+  }
 
 /* Containers for website */
 
 .container{
-  padding-top: 4vh;
-  height: 100vh;
-  width: 500px;
-  margin: 0 25rem;
-  box-sizing: border-box;
-  min-height: fit-content;
-  border: black solid 1.5px;
+  width: 80%;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .section-container{
@@ -123,6 +125,37 @@ nav,
 #form input{
   width: 70%;
   margin-left: 12%;
+  padding: 15px 15px;
+  font-size: 20px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  margin-top: 5px;
+}
+
+#form textarea{
+  width: 70%;
+  margin-left: 12%;
+  padding: 15px 15px;
+  font-size: 20px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  margin-top: 5px;
+}
+
+#form button{
+  text-align: center;
+  display: flex;
+  margin: auto;
+  border-radius: 20px;
+  padding: 15px 15px;
+  color: #fff;
+  background-color: #84bc41;
+}
+
+#form button:hover{
+  color: black;
+  background-color: #fff;
+  border-color: #84bc41;
 }
 
 #form p{
