@@ -17,10 +17,10 @@ second blue - #9cd8e9
 
 html {
   scroll-behavior: smooth;
+  font-family: 'Montserrat', sans-serif;
 }
 
 body{
-  font-family: 'Montserrat', sans-serif;
   background-color: white;
   color: black; 
 }
@@ -39,6 +39,11 @@ header{
   background-image: url(./images/banner.jpg);
   background-size: cover;
   background-position: center;
+}
+
+#water{
+  background-image: url(./images/water-banner.jpg);
+  background-size: cover;
 }
 
 /* Navigation Bar */
@@ -69,13 +74,16 @@ nav,
   .nav-link a:hover{
     color: #84bc41;
   }
+
+  .active a:hover{
+    color: black;
+  }
   
   /* When Navigation is active */
   .active {
     padding: 10px;
     border-radius: 10px;
     background-color: #84bc41;
-    
   }
 
   .logo{
@@ -93,45 +101,54 @@ nav,
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+.container h1{
+  color: black;
+  padding-top: 10px;
+  text-align: center;
+  font-size: 60px;
+}
+
+.container p{
+  color: black;
+  text-align: center;
+}
+
 .section-container{
   display: flex;
 }
 
 /* Goal */
 
-.goal-image{
-  height: 10px;
-  width: auto;
-}
-
 .goals-container {
-  display: flex;
-  background-color: #fff;
   padding: 20px;
   border-radius: 8px;
-  width: 300px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  max-width: 100%;
+
+  margin-left: 10%;
+}
+
+/* Image styles */
+.goal-image {
+  max-width: 100%;
+  margin: 0 10px;
 }
 
 .goals-container img {
-  width: 100%;
+  width: 30%;
   max-width: 100%;
   height: auto;
   border-radius: 8px;
   margin-right: 10px;
-    
+}
+
+.goals-container img:hover{
+  filter: invert(100%);
 }
 
 /* Form */
-
-#form h1{
-  color: black;
-  padding-top: 10px;
-  text-align: center;
-  font-size: 60px;
-}
 
 #form input, label{
   width: 50%;
@@ -171,13 +188,6 @@ nav,
   border-color: #84bc41;
   cursor: pointer;
 }
-
-#form p{
-  color: black;
-  text-align: center;
-}
-
-
 
 /* Footer */
 
