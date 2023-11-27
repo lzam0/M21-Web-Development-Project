@@ -17,103 +17,133 @@ body{
 /* Header */
 
 header{
-    height: 25vh;
-    padding: 60px;
-    text-align: center;
-    background: grey;
-    color: white;
-    font-size: 30px;
-    border: black 0.1rem solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 25vh;
+  color: white;
+  background: grey;
+  border: black 0.1rem solid;
+  font-size: 30px;
 }
 
 /* Navigation Bar */
 ul{
-    list-style-type: none;
-  }
-  nav,
-  .nav-link{
-      display: flex;
-  }
-  
-  nav{
-    height: 10vh;
-      justify-content: space-around;
-      align-items: center;
-  }
-  
-  .nav-link{
-      gap: 2rem;
-      list-style: none;
-      font-size: 1.5rem;
-  }
-  
-  .active{
-    /* When Navigation is active */
-  }
-  a{
-    color: black;
-    text-decoration: none;
-    text-decoration-color: white;
-  }
-  
-  a:hover{
-      color:grey;
-  }
+  list-style-type: none;
+}
 
-  .logo{
-    font-weight: bold;
-  }
+nav,
+.nav-link{
+  display: flex;
+}
+  
+nav{
+  height: 60px;
+  justify-content: space-around;
+  align-items: center;
+}
+  
+.nav-link{
+  gap: 25px;
+  list-style: none;
+  font-size: 20px;
+}
+  
+/* When Navigation is active */
+.active{
+    
+}
 
-  /* Section */
+a{
+  color: black;
+  text-decoration: none;
+  text-decoration-color: white;
+}
+  
+a:hover{
+  color:grey;
+}
 
-  section{
-    padding-top: 4vh;
-    height: 96vh;
-    margin: 0 10rem;
-    box-sizing: border-box;
-    min-height: fit-content;
+.logo{
+  font-weight: bold;
+}
+
+/* Containers for website */
+
+.container{
+  padding-top: 4vh;
+  height: 100vh;
+  width: 500px;
+  margin: 0 25rem;
+  box-sizing: border-box;
+  min-height: fit-content;
+  border: black solid 1.5px;
 }
 
 .section-container{
-    display: flex;
+  display: flex;
 }
 
-  /* Goal */
+/* Goal */
 
-  .goal-image{
-    height: 10px;
-    width: auto;
-  }
+.goal-image{
+  height: 10px;
+  width: auto;
+}
 
-  /* Form */
+.goals-container {
+  display: flex;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  fieldset{
-    display: flex;
-    flex-wrap: wrap;
-    margin: auto;
-    margin-right: 2%;
-    margin-left: auto;
-    border: 20px;
-    border-style: solid;
-    border-color: black;
-    border-radius: 5px;
+.goals-container img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-right: 10px;
+    
+}
+
+/* Form */
+
+fieldset{
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  margin-right: 2%;
+  margin-left: auto;
+  border: 1px;
+  border-style: solid;
+  border-color: black;
+  border-radius: 5px;
+}
+
+form{
+
 }
 
 legend{
-    padding: 5px;
-    font-size: medium;
-    word-spacing: 4px;
+  padding: 5px;
+  font-size: medium;
+  word-spacing: 4px;
 }
 
 /* Footer */
 
 footer {
-    background-color: black;
-    height: 3vh;
-    padding: 5rem;
+  background-color: black;
+  height: 3vh;
+  padding: 30px;
   }
 
 footer p{
-    text-align: center;
-    color: white;
+  text-align: center;
+  color: white;
 }
