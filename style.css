@@ -142,10 +142,11 @@ nav,
   height: auto;
   border-radius: 8px;
   margin-right: 10px;
+  transition: transform .1s;
 }
 
 .goals-container img:hover{
-  filter: invert(100%);
+  transform: scale(1.05);
 }
 
 /* Form */
