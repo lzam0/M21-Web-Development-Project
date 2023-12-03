@@ -91,6 +91,21 @@ nav,
     color: white;
   }
 
+/* Hamburger Menu */
+
+.hamburger-menu {
+  display: none;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 4px;
+  margin: 5px auto;
+  background-color: white;
+  border-radius: 10px;
+}
+
 /* Containers for website */
 
 .container{

@@ -1,5 +1,51 @@
+
+@media only screen and (min-width: 768px){
+    #hamburger {
+        display: none;
+    }
+}
+
 /* Screen Sizing */
 @media only screen and (max-width: 768px){
+
+nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+/* Hamburger ID */
+.hamburger-menu {
+    display: block;
+}
+
+.nav-bar{
+    margin: 16px 0;
+}
+
+.nav-link.active{
+    right: 0;
+}
+
+.nav-link{
+    position: fixed;
+    right: -100%;
+    top: 60px;
+    gap: 0;
+    flex-direction: column;
+    background-color: black;
+    opacity: 90%;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    height: 50%;
+}
+
+.nav-bar a:hover{
+    color:#cde4b3;
+}
+
+
 
 
 }
