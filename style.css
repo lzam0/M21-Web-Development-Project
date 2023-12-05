@@ -141,8 +141,9 @@ nav,
   justify-content: space-between;
   align-items: center;
   max-width: 100%;
-
   margin-left: 10%;
+  
+  border: 2px solid black;
 }
 
 /* Image styles */
@@ -162,6 +163,26 @@ nav,
 
 .goals-container img:hover{
   transform: scale(1.05);
+}
+
+.goal-information{
+  display: flex;
+  float: left;
+  align-items: center;
+  border: 2px solid black;
+}
+
+/* About Us */
+.team-container img{
+  width: 30%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-right: 10px;
+}
+
+.team-image{
+  width: 100px;
 }
 
 /* Form */
