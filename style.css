@@ -183,8 +183,19 @@ nav,
 
 .goal-information a{
   font-size: 20px;
-  color: red;
   font-weight: bold;
+}
+
+#goal-1{
+  color: red;
+}
+
+#goal-4{
+  color: red;
+}
+
+#goal-6{
+  color: lightskyblue;
 }
 
 
