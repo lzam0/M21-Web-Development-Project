@@ -8,55 +8,69 @@
 /* Screen Sizing */
 @media only screen and (max-width: 768px){
 
-nav{
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
+    nav{
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
 
-/* Hamburger ID */
-.hamburger-menu {
-    display: block;
-}
+    /* Hamburger ID */
+    .hamburger-menu {
+        display: block;
+    }
 
-.nav-bar{
-    margin: 16px 0;
-}
+    .nav-bar{
+        margin: 16px 0;
+    }
 
-.nav-link.active{
-    right: 0;
-}
+    .nav-link.active{
+        right: 0;
+    }
 
-.nav-link{
-    position: fixed;
-    right: -100%;
-    top: 60px;
-    gap: 0;
-    flex-direction: column;
-    background-color: black;
-    opacity: 90%;
-    width: 100%;
-    text-align: center;
-    transition: 0.3s;
-    height: 50%;
-}
+    .nav-link{
+        position: fixed;
+        right: -100%;
+        top: 60px;
+        gap: 0;
+        flex-direction: column;
+        background-color: black;
+        opacity: 90%;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        height: 50%;
+    }
 
-.nav-bar a:hover{
-    color:#cde4b3;
-}
+    .nav-bar a:hover{
+        color:#cde4b3;
+    }
 
-/* Goal Page */
+    /* Goal Page */
 
-.goal-image{
-    display: block;
-}
+    .goals-container {
+        margin-left: 5%;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
 
-.goal-information{
-    border-radius: 8px;
-    display: flex;
-    align-items: flex-start;
-    max-width: 100px;
-}
+    .goal-image {
+        margin: 10px 0;
+    }
+
+    .goal-information {
+        margin-left: 0;
+        margin-top: 20px;
+        padding: 10px;
+    }
+
+    .goal-information h2 {
+        text-decoration: none;
+    }
+
+    .goal-information a {
+        font-size: 16px;
+    }
 
 
 
