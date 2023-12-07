@@ -34,16 +34,7 @@ function processSubmit(e){
 }
 
 function onTextReady(text){
-    importText(text);
-}
-
-function importText(text){
-    const newText = document.createElement("p");
-    const findID = document.getElementById("form-submission");
-
-    newText.textContent = text;
-
-    findID.appendChild(newText);
+    alert("Form Submission Successful")
 }
 
 function onResponse(response){

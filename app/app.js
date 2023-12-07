@@ -28,5 +28,5 @@ app.post('/form', jsonParser, (req, res) => {
     const email = body.email;
     const message = body.message;
 
-    res.send(`Contact from sent with details - name = ${first} ${last} , email = ${email} , message = ${message}`);    
+    res.send("Form Submission Successful");
 });
