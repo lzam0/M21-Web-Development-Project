@@ -140,16 +140,6 @@ nav,
 
 /* Goal */
 
-
-.test-image img{
-  display: inline-block;
-  width: 30%; /* Adjust the width as needed */
-  max-width: 100%; /* Ensures the image doesn't exceed its original size */
-  height: auto; /* Maintains the aspect ratio */
-  /* Optionally, add margin or padding to separate images */
-  margin-right: 10px; /* Adjust as needed */
-}
-
 .goals-container{   
   padding: 20px;
   border-radius: 8px;
@@ -199,18 +189,6 @@ nav,
 .goal-information a{
   font-size: 20px;
   font-weight: bold;
-}
-
-#goal-1{
-  color: red;
-}
-
-#goal-4{
-  color: red;
-}
-
-#goal-6{
-  color: lightskyblue;
 }
 
 

@@ -45,6 +45,19 @@ nav{
     color:#cde4b3;
 }
 
+/* Goal Page */
+
+.goal-image{
+    display: block;
+}
+
+.goal-information{
+    border-radius: 8px;
+    display: flex;
+    align-items: flex-start;
+    max-width: 100px;
+}
+
 
 
 
