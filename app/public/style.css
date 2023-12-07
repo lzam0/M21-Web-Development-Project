@@ -118,12 +118,18 @@ nav,
 
 /* Containers for website */
 
+.card {
+  display: flex;
+}
+
 .container{
-  width: 80%;
+  width: 30%;
   margin: 0 auto;
   background-color: #fff;
-  padding: 20px;
+  padding: 2%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: wrap;
+  flex-direction: row;
 }
 
 .container h1{
