@@ -46,6 +46,15 @@ header{
   background-size: cover;
 }
 
+#education{
+  background-image: url(./images/education-banner.jpg);
+  background-size: cover;
+}
+
+#poverty{
+  background-image: url(./images/poverty-banner.jpg);
+  background-size: cover;
+    
 /* Navigation Bar */
 ul{
   list-style-type: none;
