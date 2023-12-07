@@ -41,25 +41,31 @@
     <main>
         <div class="container">
             <form id="form">
-                    <h1 class="test">Connect with us!</h1>
+                    <h1>Connect with us!</h1>
+                    <h2>Join our news letter</h2>
                     <p>Required information is marked with an asterisk(*)</p>
 
                     <!-- First Name -->
                     <label for="first">First Name*: </label>
-                    <input type="text" id="first" name="first" placeholder="John" aria-required="true">
+                    <input type="text" id="first" name="first" placeholder="John" required>
                     
                     <!-- Last Name -->
                     <label for="last">Last Name*: </label>
-                    <input type="text" id="last" name="last" placeholder="Doe" aria-required="true">
+                    <input type="text" id="last" name="last" placeholder="Doe" required>
 
                     <!-- Email -->
                     <label for="email">Email*: </label>
-                    <input type="text" id="email" name="email" placeholder="Your Email" aria-required="true">
+                    <input type="text" id="email" name="email" placeholder="Your Email" required>
 
                     <!-- Enter a message -->
                     <label for="message">Message*: </label>
-                    <textarea rows="5" cols="50" name="message" placeholder="Enter text" required aria-required="true"></textarea>
+                    <textarea rows="5" id="message" cols="50" name="message" placeholder="Enter text" required></textarea>
                     <button id="submit">Submit</button>
+
+                    <!-- post response -->
+                    <div id="form-submission">
+
+                    </div>
             </form>
         </div>
     </main>

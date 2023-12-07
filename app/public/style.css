@@ -123,6 +123,12 @@ nav,
   font-size: 60px;
 }
 
+.container h2{
+  color: black;
+  padding: 10px;
+  text-align: center;
+}
+
 .container p{
   color: black;
   text-align: center;

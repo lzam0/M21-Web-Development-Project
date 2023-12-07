@@ -1,19 +1,32 @@
 const express = require('express');
-const path = require('path');
 const app = express();
-const port = 3000; 
+const port = 3000; // current port
+
+const bodyParser = require('body-parser');
+const jsonParser = bodyParser.json();
+
+app.use(express.static("public"));
 
 app.get('/', (req, res) => {
     
-    const indexPath = path.join(__dirname, 'index.html');
-    
-    res.sendFile(indexPath, (err) => {
-    if(err){
-        console.log(err);
-    }
-   })
+    res.sendFile('index.html', (err) =>{
+        if (err){
+            console.log(err);
+        }
+    })
 });
 
 app.listen(port, () => {
     console.log(`My first app listening on port ${port}`)
+});
+
+
+app.post('/form', jsonParser, (req, res) => {
+    const body = req.body;
+    const first = body.first;
+    const last = body.last;
+    const email = body.email;
+    const message = body.message;
+
+    res.send(` POST by form.js - name = ${first} ${last} , email = ${email} , message = ${message}`);    
 });
