@@ -253,6 +253,35 @@ nav,
   cursor: pointer;
 }
 
+/* teams page*/
+.row{
+    font-family:'Montserrat', sans-serif;
+    
+}
+
+.container{
+    
+}
+
+.team-photo{
+    display:flex;
+}
+
+.contact-person{
+    background-color: rgb(84, 126, 12);
+    color: black;
+    border:2px solid black;
+    border-radius: 5px;
+    padding:10px;
+    margin:2px;
+    font-weight: bold;
+}
+
+.contact-person :hover{
+    background-color: aquamarine;
+}
+
+
 /* Footer */
 
 footer {
