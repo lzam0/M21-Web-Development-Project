@@ -144,7 +144,7 @@ nav,
   
 }
 
-.test-image{
+.test-image img{
   display: inline-block;
   width: 30%; /* Adjust the width as needed */
   max-width: 100%; /* Ensures the image doesn't exceed its original size */
