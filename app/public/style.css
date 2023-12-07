@@ -210,8 +210,8 @@ nav,
   margin-right: 10px;
 }
 
-.team-image{
-  width: 100px;
+.team-image img{
+  width: 100%;
 }
 
 /* Form */
