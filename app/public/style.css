@@ -152,7 +152,8 @@ nav,
 
 /* Goal */
 
-.goals-container{   
+.goals-container,
+.goal-container{   
   padding: 20px;
   border-radius: 8px;
   display: flex;
@@ -167,13 +168,20 @@ nav,
 
 .goals-container img {
   width: 30%;
-  max-width: 100%;
   height: auto;
   border-radius: 8px;
   transition: transform .1s;
 }
 
-.goals-container img:hover{
+.goal-container img{
+  width: 95%;
+  height: auto;
+  border-radius: 8px;
+  transition: transform .1s;
+}
+
+.goals-container img:hover,
+.goal-container img:hover{
   transform: scale(1.05);
 }
 
