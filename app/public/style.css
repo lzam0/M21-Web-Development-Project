@@ -122,14 +122,18 @@ nav,
   display: flex;
 }
 
-.card .container{
-  width: 30%;
+.container{
+  width: 80%;
   margin: 0 auto;
   background-color: #fff;
   padding: 2%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   display: wrap;
   flex-direction: row;
+}
+
+.card .container{
+  width: 30%;
 }
 
 .container h1{
