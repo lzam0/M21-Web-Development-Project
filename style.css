@@ -134,7 +134,20 @@ nav,
 
 /* Goal */
 
-.goals-container {
+.test-container{
+  
+}
+
+.test-image{
+  display: inline-block;
+  width: 30%; /* Adjust the width as needed */
+  max-width: 100%; /* Ensures the image doesn't exceed its original size */
+  height: auto; /* Maintains the aspect ratio */
+  /* Optionally, add margin or padding to separate images */
+  margin-right: 10px; /* Adjust as needed */
+}
+
+.goals-container{   
   padding: 20px;
   border-radius: 8px;
   display: flex;
@@ -144,9 +157,8 @@ nav,
 }
 
 .goal-image {
-  max-width: 30%;
-  flex-shrink: 0;
-  margin-right: 10px;
+  max-width: 100%;
+  margin: 0 10px;
 }
 
 .goals-container img {
