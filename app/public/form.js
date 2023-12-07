@@ -16,7 +16,7 @@ function processSubmit(e){
         message: message
     };
 
-    const serializedMessage = JSON.stringify(message);
+    const serializedMessage = JSON.stringify(formData);
 
     const fetchOptions ={
         method: "POST",
@@ -42,6 +42,8 @@ function importText(text){
     const findID = document.getElementById("form-submission");
 
     newText.textContent = text;
+
+    findID.appendChild(newText);
 }
 
 function onResponse(response){
