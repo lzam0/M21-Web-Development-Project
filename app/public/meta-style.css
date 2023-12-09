@@ -7,6 +7,10 @@
 
 /* Screen Sizing */
 @media only screen and (max-width: 768px){
+    header{
+        align-items: center;
+        font-size: 25px;
+    }
 
     nav{
         position: fixed;
@@ -47,11 +51,13 @@
 
     /* Goal Page */
 
-    .goals-container {
+    .goals-container,
+    .goal-container {
         margin-left: 5%;
         flex-direction: column;
         align-items: center;
         text-align: center;
+        position: relative;
     }
 
     .goal-image {
@@ -72,7 +78,8 @@
         font-size: 16px;
     }
 
-
-
-
+    .card{
+        position: relative;
+    }
+    
 }

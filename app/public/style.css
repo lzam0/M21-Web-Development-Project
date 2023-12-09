@@ -4,11 +4,6 @@
 main green - #84bc41
 second green - #cde4b3
 
-yellow contrast - #f9c416
-
-main blue - 	#099ec8
-second blue - #9cd8e9
-
 */
 *{
     margin: 0;
@@ -32,7 +27,7 @@ header{
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 35vh;
+  height: 35vh; /* use viewport height according to screen size */
   color: white;
   font-size: 30px;
 

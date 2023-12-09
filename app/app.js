@@ -17,7 +17,7 @@ app.get('/', (req, res) => {
 });
 
 app.listen(port, () => {
-    console.log(`My first app listening on port ${port}`)
+    console.log(`Running Web Development Project on PORT ${port}`)
 });
 
 
