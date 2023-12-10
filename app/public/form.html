@@ -1,79 +1,80 @@
 <!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="meta-style.css">
+<html>
+    <head>
+        <!-- CSS -->
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="meta-style.css">
 
-    <!-- Java Script -->
-    <script src="hamburger.js" defer></script>
-    <script src="form.js" defer></script>
-    
-    <!-- Page Title -->
-    <title>
-        Contact Page
-    </title>>
+        <!-- Java Script -->
+        <script src="hamburger.js" defer></script>
+        <script src="form.js" defer></script>
+        
+        <!-- Page Title -->
+        <title>
+            Contact Page
+        </title>>
 
-</head>
-<body>
-    <nav>
-        <h1 class="logo">Logo</h1>
+    </head>
 
-        <div class="hamburger-menu">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </div>
+    <body>
+        <nav>
+            <img src="./images/Logo.png" class="logo">
 
-        <ul class="nav-link">
-            <li class="nav-bar"><a href="index.html">Home</a></li>
-            <li class="nav-bar"><a href="goals.html">Goals</a></li>
-            <li class="nav-bar"><a href="team.html">About us</a></li>
-            <li class="nav-bar active"><a href="form.html">Contact</a></li>
-        </ul>
-    </nav>
+            <div class="hamburger-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
 
-    <header>
-        <h1>Contact</h1>
-    </header>
+            <ul class="nav-link">
+                <li class="nav-bar"><a href="index.html">Home</a></li>
+                <li class="nav-bar"><a href="goals.html">Goals</a></li>
+                <li class="nav-bar"><a href="team.html">About us</a></li>
+                <li class="nav-bar active"><a href="form.html">Contact</a></li>
+            </ul>
+        </nav>
 
-    <main>
-        <div class="container">
-            <form id="form">
-                    <h1>Connect with us!</h1>
-                    <h2>Join our news letter</h2>
-                    <p>Required information is marked with an asterisk(*)</p>
+        <header>
+            <h1>Contact</h1>
+        </header>
 
-                    <!-- First Name -->
-                    <label for="first">First Name*: </label>
-                    <input type="text" id="first" name="first" placeholder="John" required>
-                    
-                    <!-- Last Name -->
-                    <label for="last">Last Name*: </label>
-                    <input type="text" id="last" name="last" placeholder="Doe" required>
+        <main>
+            <div class="container">
+                <form id="form">
+                        <h1>Connect with us!</h1>
+                        <h2>Join our news letter</h2>
+                        <p>Required information is marked with an asterisk(*)</p>
 
-                    <!-- Email -->
-                    <label for="email">Email*: </label>
-                    <input type="text" id="email" name="email" placeholder="Your Email" required>
+                        <!-- First Name -->
+                        <label for="first">First Name*: </label>
+                        <input type="text" id="first" name="first" placeholder="John" required>
+                        
+                        <!-- Last Name -->
+                        <label for="last">Last Name*: </label>
+                        <input type="text" id="last" name="last" placeholder="Doe" required>
 
-                    <!-- Enter a message -->
-                    <label for="message">Message*: </label>
-                    <textarea rows="5" id="message" cols="50" name="message" placeholder="Enter text" required></textarea>
-                    <button id="submit">Submit</button>
+                        <!-- Email -->
+                        <label for="email">Email*: </label>
+                        <input type="text" id="email" name="email" placeholder="Your Email" required>
 
-                    <!-- post response -->
-                    <div id="form-submission">
+                        <!-- Enter a message -->
+                        <label for="message">Message*: </label>
+                        <textarea rows="5" id="message" cols="50" name="message" placeholder="Enter text" required></textarea>
+                        <button id="submit">Submit</button>
 
-                    </div>
-            </form>
-        </div>
-    </main>
-</body>
+                        <!-- post response -->
+                        <div id="form-submission">
 
-<footer>
-    <p> For a better tomorrow for the next generation</p>
-    <a><p> Copyright @2023 M21</p></a>
-</footer>
+                        </div>
+                </form>
+            </div>
+        </main>
+    </body>
+
+    <footer>
+        <p> For a better tomorrow for the next generation</p>
+        <a><p> Copyright @2023 M21</p></a>
+    </footer>
 
 </html>

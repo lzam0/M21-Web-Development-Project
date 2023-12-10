@@ -92,8 +92,10 @@ nav,
   }
 
   .logo{
-    font-weight: bold;
-    color: white;
+    margin-top: 100px;
+    width: 125px;
+    height: auto;
+    border: black solid 3px;
   }
 
 /* Hamburger Menu */
