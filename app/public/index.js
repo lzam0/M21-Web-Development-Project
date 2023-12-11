@@ -1,56 +1,7 @@
-// var indexpagedata;
-
-// function initload(){
-//   var indexpagedata1;
-//   fetch("http://localhost:3000/language.json")
-//   .then((res) => {
-//   return res.json();
-//   })
-//   .then(data => {
-//     indexpagedata1 = data;
-//     document.getElementById("indexcontent").textContent=indexpagedata1.indexpage.english;
-//     document.getElementById("sustainability-title").textContent=indexpagedata1.indexpage.englishTitle;
-//     document.getElementById("sustainability-motto").textContent=indexpagedata1.indexpage.englishMotto;
-//     document.getElementById("indexheader").textContent=indexpagedata1.indexpage.englishHeader;
-//     })
-//   }
-
-// function onClickLang(UserOptions) { 
- 
-//   if(UserOptions == 'ENGLISH'){
-//     fetch("http://localhost:3000/language.json")
-//     .then((res) => {
-//     return res.json();
-//   })
-//   .then(data => {
-//     indexpagedata = data;
-     
-//    document.getElementById("indexcontent").textContent=indexpagedata.indexpage.english;
-//    document.getElementById("sustainability-title").textContent=indexpagedata.indexpage.englishTitle;
-//    document.getElementById("sustainability-motto").textContent=indexpagedata.indexpage.englishMotto;
-//    document.getElementById("indexheader").textContent=indexpagedata.indexpage.englishHeader;
-//   })
-  
-// }
-//   if(UserOptions == 'FRENCH'){
-//     fetch("http://localhost:3000/language.json")
-//     .then((res) => {
-//     return res.json();
-//   })
-//   .then(data => {
-//     indexpagedata = data;
-   
-//    document.getElementById("indexcontent").textContent=indexpagedata.indexpage.french;
-//    document.getElementById("sustainability-title").textContent=indexpagedata.indexpage.frenchTitle;
-//    document.getElementById("sustainability-motto").textContent=indexpagedata.indexpage.frenchMotto;
-//    document.getElementById("indexheader").textContent=indexpagedata.indexpage.frenchHeader;
-//   })}
-
-// }
-
 let indexpagedata = {};
 
 function initLoad() {
+  createContent();
   fetchLanguageData();
 }
 
@@ -72,11 +23,44 @@ function fetchLanguageData() {
 }
 
 function updateContent(language) {
-  document.getElementById("indexheader").textContent = indexpagedata[language + 'Header'];
+  document.getElementById("index-title").textContent = indexpagedata[language + 'Header'];
   document.getElementById("sustainability-title").textContent = indexpagedata[language + 'Title'];
-  document.getElementById("sustainability-motto").textContent = indexpagedata[language + 'Motto'];
   document.getElementById("index-content").textContent = indexpagedata[language + 'Text'];
+  document.getElementById("sustainability-motto").textContent = indexpagedata[language + 'Motto'];
 
+}
+
+function createContent(){
+
+  // get header
+  const header = document.querySelector("header");
+
+  // get container class
+  const container = document.querySelector(".container");
+
+  // create new stuff
+  const indexTitle = document.createElement("h1");
+  indexTitle.id = "index-title";
+
+  // header title added
+  header.append(indexTitle);
+
+  // container content
+
+  // create h1 element 
+  const sustainabilityTitle = document.createElement("h1");
+  sustainabilityTitle.id = "sustainability-title";
+
+  const content = document.createElement("p");
+  content.id = "index-content";
+
+  const motto = document.createElement("h1");
+  motto.id = "sustainability-motto"
+
+  container.append(sustainabilityTitle);
+  container.append(content);
+  container.append(motto);
+  
 }
 
 function onClickLang(UserOptions) {
