@@ -32,7 +32,10 @@ function updateContent(language) {
   document.getElementById("nithya-content").textContent = teampagedata[language + 'NithyaContent'];
   document.getElementById("Vogel").textContent = teampagedata[language + 'VogelHeader'];
   document.getElementById("vogel-content").textContent = teampagedata[language + 'VogelContent'];
-}
+  const contactPersons = document.getElementsByClassName("contact-person");
+  for (let i = 0; i < contactPersons.length; i++) {
+    contactPersons[i].textContent = teampagedata[language + 'Contact'];
+}}
 
 
 
