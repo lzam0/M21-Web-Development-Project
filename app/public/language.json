@@ -80,7 +80,29 @@
     },
     
     "teamspage":{
+      "englishHeader": "About Us",
+      "englishTitle": "Meet the team!",
+      "englishsubInfo": "We are a group of computer science students, collectively known as M21 with a united goal of educating the collective on three UN sustainabilty goals that we believe is vital for the betterment of the society.",
+      "englishLeihlHeader": "Leihl",
+      "englishLeihlContent": "Name:Leihl Zambrano Task:Worked on forms page and the sub page on the UN's 6th sustainable goal of 'Clean Water and Sanitation'Fun fact: I like playing volleyball in my free time",
+      "englishNithyaHeader": "Nithya",
+      "englishNithyaContent": "Name: Nithya Vinaitheerthan Task:Worked on the teams page(this page) and the 4th UN sustainable goal page on 'Quality Education' Fun fact: I enjoy drawing comics in my sketchbook.",
+      "englishVogelHeader": "Vogel",
+      "englishVogelContent": "Name:Vogel Task:Worked on the index and the sub page 1st UN sustainable goal about 'No Poverty' Fun fact: I do a lot of tabletop roleplaying games",
+      "frenchHeader": "À propos de nous",
+      "frenchTitle": "Rencontrer l'équipe!",
+      "frenchsubInfo": "Nous sommes un groupe d'étudiants en informatique, collectivement connus sous le nom de M21, avec un objectif commun : éduquer le collectif sur trois objectifs de développement durable de l'ONU que nous pensons essentiels pour l'amélioration de la société.",
+      "frenchLeihlHeader": "Leihl",
+      "frenchLeihlContent": "Nom:Leihl Zambrano Tasché:Travail sur la page des formulaires et la sous-page sur le 6ème objectif durable de l'ONU 'Eau propre et assainissement'Fait amusant : j'aime jouer au volley-ball pendant mon temps libre",
+      "frenchNithyaHeader": "Nithya",
+      "frenchNithyaContent": "Nom: Nithya Vinaitheerthan Tâche : J'ai travaillé sur la page des équipes (cette page) et sur la page du 4ème objectif durable de l'ONU sur l'éducation de qualité . Fait amusant : j'aime dessiner des bandes dessinées dans mon carnet de croquis.",
+      "frenchVogelHeader": "Vogel",
+      "frenchVogelContent": "Nom:Vogel Tâche : J'ai travaillé sur l'index et la sous-page du 1er objectif durable de l'ONU sur Pas de pauvreté. Fait amusant : je fais beaucoup de jeux de rôle sur table."
+      
+      
+      
 
+    
     },
 
     "form":{
