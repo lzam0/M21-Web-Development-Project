@@ -83,6 +83,10 @@ nav,
   .active a:hover{
     color: black;
   }
+
+  nav button{
+    background-color: red;
+  }
   
   /* When Navigation is active */
   .active {
