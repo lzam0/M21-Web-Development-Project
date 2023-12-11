@@ -1,25 +1,19 @@
-function importText(){
-
-}
-
-
 var indexpagedata;
 
-function initload()
-{
+function initload(){
   var indexpagedata1;
-fetch("http://localhost:3000/language.json")
-.then((res) => {
-return res.json();
-})
-.then(data => {
-indexpagedata1 = data;
-document.getElementById("indexcontent").textContent=indexpagedata1.indexpage.english;
-document.getElementById("sustainability-title").textContent=indexpagedata1.indexpage.englishTitle;
-document.getElementById("sustainability-motto").textContent=indexpagedata1.indexpage.englishMotto;
-document.getElementById("indexheader").textContent=indexpagedata1.indexpage.englishHeader;
-})
-}
+  fetch("http://localhost:3000/language.json")
+  .then((res) => {
+  return res.json();
+  })
+  .then(data => {
+    indexpagedata1 = data;
+    document.getElementById("indexcontent").textContent=indexpagedata1.indexpage.english;
+    document.getElementById("sustainability-title").textContent=indexpagedata1.indexpage.englishTitle;
+    document.getElementById("sustainability-motto").textContent=indexpagedata1.indexpage.englishMotto;
+    document.getElementById("indexheader").textContent=indexpagedata1.indexpage.englishHeader;
+    })
+  }
 
 function onClickLang(UserOptions) { 
  

@@ -1,66 +1,44 @@
-var formpagedata;
+let formpagedata = {};
 
-function initload()
-{
-  var formpagedata1;
-fetch("http://localhost:3000/language.json")
-.then((res) => {
-return res.json();
-
-})
-.then(data => {
-formpagedata1 = data;
-document.getElementById("contactHeaderLine").textContent=formpagedata1.formpage.englishContactHeaderLine;
-document.getElementById("connectWith").textContent=formpagedata1.formpage.englishConnectWith;
-document.getElementById("joinNewsletter").textContent=formpagedata1.formpage.englishJoinNewsletter;
-document.getElementById("requiredMarkedAsterisk").textContent=formpagedata1.formpage.englishRequiredMarkedAsterisk;
-document.getElementById("firstNameLine").textContent=formpagedata1.formpage.englishFirstNameLine;
-document.getElementById("lastNameLine").textContent=formpagedata1.formpage.englishLastNameLine;
-document.getElementById("emailLine").textContent=formpagedata1.formpage.englishEmailLine;
-document.getElementById("messageLine").textContent=formpagedata1.formpage.englishMessageLine;
-document.getElementById("submitButtonLine").textContent=formpagedata1.formpage.englishSubmitButtonLine;
-})
+function initLoad() {
+  fetchLanguageData();
 }
 
-function onClickLang(UserOptions) { 
- 
-  if(UserOptions == 'ENGLISH'){
-    fetch("http://localhost:3000/language.json")
-    .then((res) => {
-    return res.json();
-  })
-  .then(data => {
-    formpagedata = data;
-    document.getElementById("contactHeaderLine").textContent=formpagedata1.formpage.englishContactHeaderLine;
-    document.getElementById("connectWith").textContent=formpagedata1.formpage.englishConnectWith;
-    document.getElementById("joinNewsletter").textContent=formpagedata1.formpage.englishJoinNewsletter;
-    document.getElementById("requiredMarkedAsterisk").textContent=formpagedata1.formpage.englishRequiredMarkedAsterisk;
-    document.getElementById("firstNameLine").textContent=formpagedata1.formpage.englishFirstNameLine;
-    document.getElementById("lastNameLine").textContent=formpagedata1.formpage.englishLastNameLine;
-    document.getElementById("emailLine").textContent=formpagedata1.formpage.englishEmailLine;
-    document.getElementById("messageLine").textContent=formpagedata1.formpage.englishMessageLine;
-    document.getElementById("submitButtonLine").textContent=formpagedata1.formpage.englishSubmitButtonLine;
-})
-  
-}
-  if(UserOptions == 'FRENCH'){
-    fetch("http://localhost:3000/language.json")
-    .then((res) => {
-    return res.json();
-  })
-  .then(data => {
-    formpagedata = data;
-    document.getElementById("contactHeaderLine").textContent=formpagedata1.formpage.frenchContactHeaderLine;
-    document.getElementById("connectWith").textContent=formpagedata1.formpage.frenchConnectWith;
-    document.getElementById("joinNewsletter").textContent=formpagedata1.formpage.frenchJoinNewsletter;
-    document.getElementById("requiredMarkedAsterisk").textContent=formpagedata1.formpage.frenchRequiredMarkedAsterisk;
-    document.getElementById("firstNameLine").textContent=formpagedata1.formpage.frenchFirstNameLine;
-    document.getElementById("lastNameLine").textContent=formpagedata1.formpage.frenchLastNameLine;
-    document.getElementById("emailLine").textContent=formpagedata1.formpage.frenchEmailLine;
-    document.getElementById("messageLine").textContent=formpagedata1.formpage.frenchMessageLine;
-    document.getElementById("submitButtonLine").textContent=formpagedata1.formpage.frenchSubmitButtonLine;
-  })}
+// run languagae.json
+function fetchLanguageData() {
+  fetch("http://localhost:3000/language.json")
+    .then((res) => res.json())
+    .then((data) => {
+      formpagedata = data.formpage;
 
+      // set english as main language
+      updateContent('english');
+    })
+
+    // handle any errors
+    .catch((error) => {
+      console.error('Error fetching language data:', error);
+    });
+}
+
+function updateContent(language) {
+  document.getElementById("contactHeaderLine").textContent = formpagedata[language + 'ContactHeaderLine'];
+  document.getElementById("connectWith").textContent = formpagedata[language + 'ConnectWith'];
+  document.getElementById("joinNewsletter").textContent = formpagedata[language + 'JoinNewsletter'];
+  document.getElementById("requiredMarkedAsterisk").textContent = formpagedata[language + 'RequiredMarkedAsterisk'];
+  document.getElementById("firstNameLine").textContent = formpagedata[language + 'FirstNameLine'];
+  document.getElementById("lastNameLine").textContent = formpagedata[language + 'LastNameLine'];
+  document.getElementById("emailLine").textContent = formpagedata[language + 'EmailLine'];
+  document.getElementById("messageLine").textContent = formpagedata[language + 'MessageLine'];
+  document.getElementById("submit").textContent = formpagedata[language + 'submit'];
+}
+
+function onClickLang(UserOptions) {
+  if (UserOptions === 'ENGLISH' || UserOptions === 'FRENCH') {
+    updateContent(UserOptions.toLowerCase());
+  } else {
+    console.error('Invalid language option');
+  }
 }
 
 function processSubmit(e){
@@ -107,7 +85,11 @@ function onResponse(response){
   return response.text();
 }
 
-/* Grab form submit button */
+// Grab form submit button
 const form = document.querySelector("#form");
 
+// event listenr when submit runs
 addEventListener('submit', processSubmit);
+
+// run different language
+fetchLanguageData();
