@@ -54,6 +54,34 @@ function onClickLang(UserOptions) {
 
 // From here its for Goal1 page
 
+// All Goal Pages
+
+function load(){
+  // create content on each page
+  fetchLanguageData();
+  
+}
+
+function fetchGoal1(){
+  fetch("http://localhost:3000/language.json")
+  .then((res) => res.json())
+  .then((data) => {
+    indexpagedata  = data.indexpage;
+
+      // set english as main language
+      updateContent('english');
+    })
+
+    // handle any errors
+    .catch((error) => {
+      console.error('Error fetching language data:', error);
+    });
+}
+
+function goal6Update(languagae){
+
+}
+
 function initloadGoal1()
 {
     var goalpagedata2;
@@ -206,16 +234,23 @@ return res.json();
 .then(data => {
    goalpagedata6 = data;
    //alert(goalpagedata2.goal1page.englishGoalInformation);
-
-   document.getElementById("GoalTitle").textContent=goalpagedata6.goal6page.englishTitle;
-   document.getElementById("Goalheader").textContent=goalpagedata6.goal6page.englishHeader;
-   document.getElementById("GoalQuestion").textContent=goalpagedata6.goal6page.englishGoalQuestion;
-   document.getElementById("GoalAnswer").textContent=goalpagedata6.goal6page.englishGoalAnswer;
-   document.getElementById("GoalWhy").textContent=goalpagedata6.goal6page.englishGoalWhy;
-   document.getElementById("GoalWhyResponse").textContent=goalpagedata6.goal6page.englishGoalWhyResponse;
-   document.getElementById("GoalSolution").textContent=goalpagedata6.goal6page.englishGoalSolution;
-   document.getElementById("GoalSolutionResponse").textContent=goalpagedata6.goal6page.englishGoalSolutionResponse;
-   document.getElementById("IntroLink").textContent=goalpagedata6.goal6page.englishIntroLink;
+   document.getElementById("GoalTitle").textContent=goalpagedata6.goal6page.EnglishTitle;
+   document.getElementById("Goalheader").textContent=goalpagedata6.goal6page.EnglishHeader;
+   document.getElementById("question").textContent=goalpagedata6.goal6page.englishGoalQuestion;
+   document.getElementById("answer").textContent=goalpagedata6.goal6page.englishGoalAnswer;
+   document.getElementById("why").textContent=goalpagedata6.goal6page.englishGoalWhy;
+   document.getElementById("why-response").textContent=goalpagedata6.goal6page.englishGoalWhyResponse;
+   document.getElementById("solution").textContent=goalpagedata6.goal6page.englishGoalSolution;
+   document.getElementById("solution-response").textContent=goalpagedata6.goal6page.englishGoalSolutionResponse;
+  //  document.getElementById("GoalTitle").textContent=goalpagedata6.goal6page.englishTitle;
+  //  document.getElementById("Goalheader").textContent=goalpagedata6.goal6page.englishHeader;
+  //  document.getElementById("GoalQuestion").textContent=goalpagedata6.goal6page.englishGoalQuestion;
+  //  document.getElementById("GoalAnswer").textContent=goalpagedata6.goal6page.englishGoalAnswer;
+  //  document.getElementById("GoalWhy").textContent=goalpagedata6.goal6page.englishGoalWhy;
+  //  document.getElementById("GoalWhyResponse").textContent=goalpagedata6.goal6page.englishGoalWhyResponse;
+  //  document.getElementById("GoalSolution").textContent=goalpagedata6.goal6page.englishGoalSolution;
+  //  document.getElementById("GoalSolutionResponse").textContent=goalpagedata6.goal6page.englishGoalSolutionResponse;
+  //  document.getElementById("IntroLink").textContent=goalpagedata6.goal6page.englishIntroLink;
    document.getElementById("goal6image").innerHTML="<img src='http://localhost:3000/images/Goal6.png' alt='Goal 1'>";
    
 })
@@ -232,13 +267,13 @@ return res.json();
         .then(data => {
           goalpagedata = data;
           document.getElementById("GoalTitle").textContent=goalpagedata.goal6page.EnglishTitle;
-          document.getElementById("Goalheader").textContent=goalpagedata.goal6page.EnglishHeader; 
-          document.getElementById("GoalQuestion").textContent=goalpagedata.goal6page.englishGoalQuestion;
-          document.getElementById("GoalAnswer").textContent=goalpagedata.goal6page.englishGoalAnswer;
-          document.getElementById("GoalWhy").textContent=goalpagedata.goal6page.englishGoalWhy;
-          document.getElementById("GoalWhyResponse").textContent=goalpagedata.goal6page.englishGoalWhyResponse;
-          document.getElementById("GoalSolution").textContent=goalpagedata.goal6page.englishGoalSolution;
-          document.getElementById("GoalSolutionResponse").textContent=goalpagedata.goal6page.englishGoalSolutionResponse;
+          document.getElementById("goal-title").textContent=goalpagedata.goal6page.EnglishHeader;
+          document.getElementById("question").textContent=goalpagedata.goal6page.englishGoalQuestion;
+          document.getElementById("answer").textContent=goalpagedata.goal6page.englishGoalAnswer;
+          document.getElementById("why").textContent=goalpagedata.goal6page.englishGoalWhy;
+          document.getElementById("why-response").textContent=goalpagedata.goal6page.englishGoalWhyResponse;
+          document.getElementById("solution").textContent=goalpagedata.goal6page.englishGoalSolution;
+          document.getElementById("solution-response").textContent=goalpagedata.goal6page.englishGoalSolutionResponse;
       })}
          
         if(UserOptions == 'FRENCH'){
@@ -262,3 +297,56 @@ return res.json();
       })}
       
       }
+
+
+
+function createContent(){
+  // get header
+  const header = document.querySelector("header");
+
+  // get container class
+  const container = document.querySelector(".container");
+
+  // get information container
+  const information = document.querySelector(".goal-information");
+
+  // create new content
+  const question = document.createElement("h2");
+  question.id = "question";
+
+  const answer = document.createElement("p");
+  answer.id = "answer";
+
+  const why = document.createElement("h2");
+  why.id = "why";
+
+  const whyAnswer = document.createElement("p");
+  whyAnswer.id = "why-response";
+
+  const solution = document.createElement("h2");
+  solution.id = "solution";
+
+  const solutionAnswer = document.createElement("p");
+  solutionAnswer.id = "solution-response";
+  
+  const more = document.createElement("p");
+  more.id = "more";
+
+  const link = document.createElement("a");
+  link.id = "link";
+  link.textContent = "http://www.un.org/sustainabledevelopment";
+  link.href = "http://www.un.org/sustainabledevelopment";
+
+
+  information.append(question);
+  information.append(answer);
+  information.append(why);
+  information.append(whyAnswer);
+  information.append(solution);
+  information.append(solutionAnswer);
+  information.append(more);
+  information.append(link);
+
+}
+
+createContent();
