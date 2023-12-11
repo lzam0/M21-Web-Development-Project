@@ -81,7 +81,7 @@
     
     "teamspage":{
 
-    }
+    },
 
     "form":{
         "englishContactHeaderLine":"Contact",
@@ -92,7 +92,7 @@
         "englishLastNameLine":"Last Name*: ",
         "englishEmailLine":"Email*: ",
         "englishMessageLine":"Message*: ",
-        "englishSubmitButtonLine":"Submit"
+        "englishSubmitButtonLine":"Submit",
         
         "frenchContactHeaderLine":"Contact",
         "frenchConnectWith":"Connecte-toi avec nous!",
