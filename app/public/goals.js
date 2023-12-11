@@ -61,6 +61,8 @@ function initLoadGoal(goalNumber) {
       // goal + goalNumber
       goalpagedata[goalNumber] = data[`goal${goalNumber}page`];
       updateContent(goalNumber, 'english');
+
+      console.log(goalNumber);
   })
   .catch((error) => {
       console.error('Error fetching language data:', error);
@@ -68,16 +70,16 @@ function initLoadGoal(goalNumber) {
 }
 
 function updateContent(goalNum, language){
-  document.getElementById("GoalTitle").textContent = goalpagedata[goalNum][language + "Title"];
-  document.getElementById("Goalheader").textContent = goalpagedata[goalNum][language + "Header"];
-  
+  document.getElementById("goal-title").textContent = goalpagedata[goalNum][language + "Title"];
+  document.getElementById("goal-header").textContent = goalpagedata[goalNum][language + "Header"];
+
   document.getElementById("question").textContent = goalpagedata[goalNum][language + "GoalQuestion"];
   document.getElementById("answer").textContent = goalpagedata[goalNum][language + "GoalAnswer"];
   document.getElementById("why").textContent = goalpagedata[goalNum][language + "GoalWhy"];
   document.getElementById("why-response").textContent = goalpagedata[goalNum][language + "GoalWhyResponse"];
   document.getElementById("solution").textContent = goalpagedata[goalNum][language + "GoalSolution"];
   document.getElementById("solution-response").textContent = goalpagedata[goalNum][language + "GoalSolutionResponse"];
-  document.getElementById("goal6image").innerHTML="<img src='http://localhost:3000/images/Goal6.png'";
+  document.getElementById("goal"+goalNum+"image").innerHTML = '<img src="http://localhost:3000/images/Goal' + goalNum + '.png">';
 }
 
 function onClickLangGoal(goalNumber, userOptions) {
