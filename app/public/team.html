@@ -34,7 +34,7 @@
         <li class="nav-bar"><a href="goals.html">Goals</a></li>
         <li class="nav-bar active"><a href="team.html">About us</a></li>
         <li class="nav-bar"><a href="form.html">Contact</a></li>
-        <select name="language" id="language">
+        <select name="language" id="language" onchange="onClickLangteam(language.value);" class="nav-bar">
           <option value="ENGLISH">ENGLISH</option>
           <option value="FRENCH">FRENCH</option>
         </select>
@@ -42,18 +42,18 @@
     </nav>
 
     <header>
-      <h1>About Us</h1>
+      <h1 id="team-element-header">About Us</h1>
     </header>
 
     
 
-<h2 class="team-header">Meet the team!</h2>
-  <p class="team-header">We are a group of computer science students, collectively known as M21 with a united goal of educating the collective on three UN sustainabilty goals that we believe is vital for the betterment of the society. </p>
+<h2 class="team-header" id="team-header">Meet the team!</h2>
+  <p class="team-header" id="team-header-content">We are a group of computer science students, collectively known as M21 with a united goal of educating the collective on three UN sustainabilty goals that we believe is vital for the betterment of the society. </p>
   
     <main>
       <div class="card">
 
-        <div class="container">
+        <div class="container" id="Leihl">
           <h2>Leihl</h2>
           <div class="team-photo"><img src="./images/pfp.jpg" alt ="Leihl"></div>
           <p> Name:Leihl Zambrano</p>
@@ -62,7 +62,7 @@
           <a href="mailto:psh22xtu@uea.ac.uk"><button class="contact-person">Contact</button></a>
         </div>
         
-        <div class="container">
+        <div class="container" id="Nithya">
           <h2>Nithya</h2>
           <div class="team-photo"><img src="./images/nithya.jpg" alt="Nithya"></div>
           <p>Name: Nithya Vinaitheerthan</p>
@@ -71,7 +71,7 @@
           <a href = "mailto:aed23nnu@uea.ac.uk"><button class="contact-person">Contact</button></a>
         </div>
         
-         <div class="container">
+         <div class="container" id="Vogel">
           <h2>Vogel</h2>
           <div class="team-photo"><img src="./images/pfp2.jpeg" alt="Vogel"></div>
           <p>Name:Vogel</p>
