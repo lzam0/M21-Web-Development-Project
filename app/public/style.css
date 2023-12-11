@@ -92,8 +92,10 @@ nav,
   }
 
   .logo{
-    font-weight: bold;
-    color: white;
+    margin-top: 100px;
+    width: 125px;
+    height: auto;
+    border: black solid 3px;
   }
 
 /* Hamburger Menu */
@@ -123,7 +125,6 @@ nav,
   background-color: #fff;
   padding: 2%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  display: wrap;
   flex-direction: row;
 }
 
@@ -246,8 +247,9 @@ nav,
   font-weight: bold;
 }
 
-.contact-person a:hover{
-  background-color: aquamarine;
+.contact-person :hover{
+    background-color: aquamarine;
+    curser: pointer;
 }
 
 /* Form */
