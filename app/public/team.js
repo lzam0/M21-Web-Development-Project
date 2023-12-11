@@ -1,54 +1,51 @@
 
-var teampagedata;
+let teampagedata = {};
 
-function initload()
-{
-  var teampagedata;
-fetch("http://localhost:3000/language.json")
-.then((res) => {
-return res.json();
-})
-.then(data => {
-teampagedata = data;
-document.getElementById("team-element-header").textContent=teampagedata.teamspage.englishHeader;
-document.getElementById("team-header").textContent=teampagedata.teamspage.englishTitle;
-document.getElementById("team-header-content").textContent=teampagedata.teamspage.englishsubInfo;
-document.getElementById("").textContent=teampagedata.teamspage.englishHeader;
-})
+function initLoad() {
+  fetchLanguageData();
 }
 
-function onClickLangteam(UserOptions) { 
- 
-  if(UserOptions == 'ENGLISH'){
-    fetch("http://localhost:3000/language.json")
-    .then((res) => {
-    return res.json();
-  })
-  .then(data => {
-    teampagedata = data;
-     
-    document.getElementById("team-element-header").textContent=teampagedata.teamspage.englishHeader;
-    document.getElementById("team-header").textContent=teampagedata.teamspage.englishTitle;
-    document.getElementById("team-header-content").textContent=teampagedata.teamspage.englishsubInfo;
-    document.getElementById("").textContent=teampagedata.teamspage.englishLeihlHeader;
-  })
-  
-}
-  if(UserOptions == 'FRENCH'){
-    fetch("http://localhost:3000/language.json")
-    .then((res) => {
-    return res.json();
-  })
-  .then(data => {
-    teampagedata = data;
-   
-   document.getElementById("indexcontent").textContent=indexpagedata.indexpage.french;
-   document.getElementById("sustainability-title").textContent=indexpagedata.indexpage.frenchTitle;
-   document.getElementById("sustainability-motto").textContent=indexpagedata.indexpage.frenchMotto;
-   document.getElementById("indexheader").textContent=indexpagedata.indexpage.frenchHeader;
-  })}
+// run languagae.json
+function fetchLanguageData() {
+  fetch("http://localhost:3000/language.json")
+    .then((res) => res.json())
+    .then((data) => {
+      teampagedata = data.teamspage;
 
+      // set english as main language
+      updateContent('english');
+    })
+
+    // handle any errors
+    .catch((error) => {
+      console.error('Error fetching language data:', error);
+    });
 }
+
+function updateContent(language) {
+  document.getElementById("team-element-header").textContent = teampagedata[language + 'Header'];
+  document.getElementById("team-header").textContent = teampagedata[language + 'Title'];
+  document.getElementById("team-header-content").textContent = teampagedata[language + 'SubInfo'];
+  document.getElementById("Leihl").textContent = teampagedata[language + 'LeihlHeader'];
+  document.getElementById("leihl-content").textContent = teampagedata[language + 'LeihlContent'];
+  document.getElementById("Nithya").textContent = teampagedata[language + 'NithyaHeader'];
+  document.getElementById("nithya-content").textContent = teampagedata[language + 'NithyaContent'];
+  document.getElementById("Vogel").textContent = teampagedata[language + 'VogelHeader'];
+  document.getElementById("vogel-content").textContent = teampagedata[language + 'VogelContent'];
+}
+
+
+
+function onClickLang(UserOptions) {
+  if (UserOptions === 'ENGLISH' || UserOptions === 'FRENCH') {
+    updateContent(UserOptions.toLowerCase());
+  } else {
+    console.error('Invalid language option');
+  }
+}
+
+initLoad();
+
 
 
 
