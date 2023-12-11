@@ -99,7 +99,8 @@ function processSubmit(e){
 }
 
 function onTextReady(text){
-  alert("Form Submission Successful")
+  alert("Form Submission Successful");
+  console.log("News Letter Signed Up");
 }
 
 function onResponse(response){
