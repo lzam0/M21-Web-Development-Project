@@ -23,13 +23,13 @@ function fetchLanguageData() {
 
 function updateContent(language) {
   document.getElementById("contactHeaderLine").textContent = formpagedata[language + 'ContactHeaderLine'];
-  document.getElementById("connectWith").textContent = formpagedata[language + 'ConnectWith'];
-  document.getElementById("joinNewsletter").textContent = formpagedata[language + 'JoinNewsletter'];
-  document.getElementById("requiredMarkedAsterisk").textContent = formpagedata[language + 'RequiredMarkedAsterisk'];
-  document.getElementById("firstNameLine").textContent = formpagedata[language + 'FirstNameLine'];
-  document.getElementById("lastNameLine").textContent = formpagedata[language + 'LastNameLine'];
-  document.getElementById("emailLine").textContent = formpagedata[language + 'EmailLine'];
-  document.getElementById("messageLine").textContent = formpagedata[language + 'MessageLine'];
+  document.getElementById("connect").textContent = formpagedata[language + 'ConnectWith'];
+  document.getElementById("join-newsletter").textContent = formpagedata[language + 'JoinNewsletter'];
+  document.getElementById("requirement").textContent = formpagedata[language + 'RequiredMarkedAsterisk'];
+  document.getElementById("first-text").textContent = formpagedata[language + 'FirstNameLine'];
+  document.getElementById("last-text").textContent = formpagedata[language + 'LastNameLine'];
+  document.getElementById("email-text").textContent = formpagedata[language + 'EmailLine'];
+  document.getElementById("message-text").textContent = formpagedata[language + 'MessageLine'];
   document.getElementById("submit").textContent = formpagedata[language + 'submit'];
 }
 
