@@ -182,7 +182,7 @@ return res.json();
 function initloadGoal6()
 {
     var goalpagedata6;
-    alert("are we loading ?");
+    
 
 fetch("http://localhost:3000/language.json")
 .then((res) => {
