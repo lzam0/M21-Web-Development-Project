@@ -231,7 +231,9 @@ nav,
   width: 100%;
 }
 
-
+.team-header {
+    text-align: center;
+}
 
 .team-photo{
   display:flex;
