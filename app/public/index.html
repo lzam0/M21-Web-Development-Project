@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <meta charset="UTF-8">
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="meta-style.css">
@@ -13,7 +14,7 @@
     <!-- Page Title -->
     <title>
         Home
-    </title>>
+    </title>
 </head>
 
 <body onload="initload();">
@@ -31,10 +32,12 @@
           <li class="nav-bar"><a href="goals.html">Goals</a></li>
           <li class="nav-bar"><a href="team.html">About Us</a></li>
           <li class="nav-bar"><a href="form.html">Contact</a></li>
-          <select name="language" id="language" onchange="onClickLang(language.value);" class="nav-bar">
-            <option value="ENGLISH">ENGLISH</option>
-            <option value="FRENCH">FRENCH</option>
-          </select>
+          <li class="nav-bar">
+            <select name="language" id="language" onchange="onClickLang(language.value);" class="nav-bar">
+                <option value="ENGLISH">ENGLISH</option>
+                <option value="FRENCH">FRENCH</option>
+              </select>
+          </li>
         </ul>
     </nav>
     
