@@ -250,7 +250,8 @@ nav,
 }
 
 .contact-person :hover{
-  background-color: aquamarine;
+    background-color: aquamarine;
+    curser: pointer;
 }
 
 /* Form */
