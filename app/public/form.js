@@ -22,7 +22,7 @@ function fetchLanguageData() {
 }
 
 function updateContent(language) {
-  document.getElementById("contactHeaderLine").textContent = formpagedata[language + 'ContactHeaderLine'];
+  document.getElementById("contact-title").textContent = formpagedata[language + 'ContactHeaderLine'];
   document.getElementById("connect").textContent = formpagedata[language + 'ConnectWith'];
   document.getElementById("join-newsletter").textContent = formpagedata[language + 'JoinNewsletter'];
   document.getElementById("requirement").textContent = formpagedata[language + 'RequiredMarkedAsterisk'];
