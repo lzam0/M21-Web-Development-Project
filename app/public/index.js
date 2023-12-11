@@ -1,3 +1,7 @@
+function importText(){
+
+}
+
 
 var indexpagedata;
 
