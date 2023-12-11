@@ -249,9 +249,9 @@ nav,
   font-weight: bold;
 }
 
-.contact-person :hover{
+.contact-person a:hover{
     background-color: aquamarine;
-    curser: pointer;
+    cursor: pointer;
 }
 
 /* Form */
@@ -305,7 +305,7 @@ footer {
   background-color: black;
   height: 3vh;
   padding: 30px;
-  }
+}
 
 footer p{
   text-align: center;

@@ -71,7 +71,9 @@ return res.json();
    document.getElementById("GoalSolution").textContent=goalpagedata2.goal1page.englishGoalSolution;
    document.getElementById("GoalSolutionResponse").textContent=goalpagedata2.goal1page.englishGoalSolutionResponse;
    document.getElementById("IntroLink").textContent=goalpagedata2.goal1page.englishIntroLink;
-    })
+   document.getElementsByClassName("goal-image").innerHTML="<a href='goal-1.html'><img src='./images/Goal1.png' alt='Goal 1'></a>"
+   
+})
     }
 
     function onClickLangGoal1(UserOptions) { 
@@ -84,14 +86,14 @@ return res.json();
         })
         .then(data => {
           goalpagedata = data;
-         
-         
           document.getElementById("GoalQuestion").textContent=goalpagedata.goal1page.englishGoalQuestion;
           document.getElementById("GoalAnswer").textContent=goalpagedata.goal1page.englishGoalAnswer;
           document.getElementById("GoalWhy").textContent=goalpagedata.goal1page.englishGoalWhy;
           document.getElementById("GoalWhyResponse").textContent=goalpagedata.goal1page.englishGoalWhyResponse;
           document.getElementById("GoalSolution").textContent=goalpagedata.goal1page.englishGoalSolution;
           document.getElementById("GoalSolutionResponse").textContent=goalpagedata.goal1page.englishGoalSolutionResponse;
+
+          
       })}
          
         if(UserOptions == 'FRENCH'){
@@ -134,6 +136,8 @@ return res.json();
    document.getElementById("GoalSolution").textContent=goalpagedata4.goal4page.englishGoalSolution;
    document.getElementById("GoalSolutionResponse").textContent=goalpagedata4.goal4page.englishGoalSolutionResponse;
    document.getElementById("IntroLink").textContent=goalpagedata4.goal4page.englishIntroLink;
+   document.getElementById("goalimages").innerHTML="<a href='goal-4.html'><img src='./images/Goal4.png' alt='Goal 4'></a>"
+   
 })
     }
 
@@ -198,6 +202,7 @@ return res.json();
    document.getElementById("GoalSolution").textContent=goalpagedata6.goal6page.englishGoalSolution;
    document.getElementById("GoalSolutionResponse").textContent=goalpagedata6.goal6page.englishGoalSolutionResponse;
    document.getElementById("IntroLink").textContent=goalpagedata6.goal6page.englishIntroLink;
+  
 })
     }
 
