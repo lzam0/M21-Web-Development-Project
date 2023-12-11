@@ -64,6 +64,8 @@ return res.json();
 })
 .then(data => {
    goalpagedata2 = data;
+   document.getElementById("GoalTitle").innerText=goalpagedata2.goal1page.englishTitle;
+   document.getElementById("Goalheader").innerText=goalpagedata2.goal1page.englishHeader;
    document.getElementById("GoalQuestion").textContent=goalpagedata2.goal1page.englishGoalQuestion;
    document.getElementById("GoalAnswer").textContent=goalpagedata2.goal1page.englishGoalAnswer;
    document.getElementById("GoalWhy").textContent=goalpagedata2.goal1page.englishGoalWhy;
@@ -71,7 +73,7 @@ return res.json();
    document.getElementById("GoalSolution").textContent=goalpagedata2.goal1page.englishGoalSolution;
    document.getElementById("GoalSolutionResponse").textContent=goalpagedata2.goal1page.englishGoalSolutionResponse;
    document.getElementById("IntroLink").textContent=goalpagedata2.goal1page.englishIntroLink;
-   document.getElementsByClassName("goal-image").innerHTML="<a href='goal-1.html'><img src='./images/Goal1.png' alt='Goal 1'></a>"
+   document.getElementById("goal1image").innerHTML="<img src='http://localhost:3000/images/Goal1.png' alt='Goal 1'>";
    
 })
     }
@@ -86,6 +88,8 @@ return res.json();
         })
         .then(data => {
           goalpagedata = data;
+          document.getElementById("GoalTitle").textContent=goalpagedata.goal1page.englishTitle;
+          document.getElementById("Goalheader").textContent=goalpagedata.goal1page.englishHeader;
           document.getElementById("GoalQuestion").textContent=goalpagedata.goal1page.englishGoalQuestion;
           document.getElementById("GoalAnswer").textContent=goalpagedata.goal1page.englishGoalAnswer;
           document.getElementById("GoalWhy").textContent=goalpagedata.goal1page.englishGoalWhy;
@@ -103,6 +107,8 @@ return res.json();
         })
         .then(data => {
           goalpagedata = data;
+          document.getElementById("GoalTitle").textContent=goalpagedata.goal1page.frenchTitle;
+          document.getElementById("Goalheader").textContent=goalpagedata.goal1page.frenchHeader;       
           document.getElementById("GoalQuestion").textContent=goalpagedata.goal1page.frenchGoalQuestion;
           document.getElementById("GoalAnswer").textContent=goalpagedata.goal1page.frenchGoalAnswer;
           document.getElementById("GoalWhy").textContent=goalpagedata.goal1page.frenchGoalWhy;
@@ -129,6 +135,8 @@ return res.json();
 .then(data => {
    goalpagedata4 = data;
    //alert(goalpagedata2.goal1page.englishGoalInformation);
+   document.getElementById("GoalTitle").textContent=goalpagedata4.goal4page.englishTitle;
+   document.getElementById("Goalheader").textContent=goalpagedata4.goal4page.englishHeader;
    document.getElementById("GoalQuestion").textContent=goalpagedata4.goal4page.englishGoalQuestion;
    document.getElementById("GoalAnswer").textContent=goalpagedata4.goal4page.englishGoalAnswer;
    document.getElementById("GoalWhy").textContent=goalpagedata4.goal4page.englishGoalWhy;
@@ -136,8 +144,8 @@ return res.json();
    document.getElementById("GoalSolution").textContent=goalpagedata4.goal4page.englishGoalSolution;
    document.getElementById("GoalSolutionResponse").textContent=goalpagedata4.goal4page.englishGoalSolutionResponse;
    document.getElementById("IntroLink").textContent=goalpagedata4.goal4page.englishIntroLink;
-   document.getElementById("goal-image").innerHTML="<a href='goal-4.html'><img src='./images/Goal4.png' alt='Goal 4'></a>"
-   
+   document.getElementById("goal4image").innerHTML="<img src='http://localhost:3000/images/Goal4.png' alt='Goal 4'>";
+    
 })
     }
 
@@ -151,7 +159,8 @@ return res.json();
         })
         .then(data => {
           goalpagedata = data;
-         
+          document.getElementById("GoalTitle").textContent=goalpagedata.goal4page.englishTitle;
+          document.getElementById("Goalheader").textContent=goalpagedata.goal4page.englishHeader; 
          
           document.getElementById("GoalQuestion").textContent=goalpagedata.goal4page.englishGoalQuestion;
           document.getElementById("GoalAnswer").textContent=goalpagedata.goal4page.englishGoalAnswer;
@@ -168,6 +177,8 @@ return res.json();
         })
         .then(data => {
           goalpagedata = data;
+          document.getElementById("GoalTitle").textContent=goalpagedata.goal4page.frenchTitle;
+          document.getElementById("Goalheader").textContent=goalpagedata.goal4page.frenchHeader; 
           document.getElementById("GoalQuestion").textContent=goalpagedata.goal4page.frenchGoalQuestion;
           document.getElementById("GoalAnswer").textContent=goalpagedata.goal4page.frenchGoalAnswer;
           document.getElementById("GoalWhy").textContent=goalpagedata.goal4page.frenchGoalWhy;
@@ -195,6 +206,9 @@ return res.json();
 .then(data => {
    goalpagedata6 = data;
    //alert(goalpagedata2.goal1page.englishGoalInformation);
+
+   document.getElementById("GoalTitle").textContent=goalpagedata6.goal6page.englishTitle;
+   document.getElementById("Goalheader").textContent=goalpagedata6.goal6page.englishHeader;
    document.getElementById("GoalQuestion").textContent=goalpagedata6.goal6page.englishGoalQuestion;
    document.getElementById("GoalAnswer").textContent=goalpagedata6.goal6page.englishGoalAnswer;
    document.getElementById("GoalWhy").textContent=goalpagedata6.goal6page.englishGoalWhy;
@@ -202,8 +216,8 @@ return res.json();
    document.getElementById("GoalSolution").textContent=goalpagedata6.goal6page.englishGoalSolution;
    document.getElementById("GoalSolutionResponse").textContent=goalpagedata6.goal6page.englishGoalSolutionResponse;
    document.getElementById("IntroLink").textContent=goalpagedata6.goal6page.englishIntroLink;
-   document.getElementById("goal-image").innerHTML="<a href='goal-6.html'><img src='./images/Goal6.png' alt='Goal 6'></a>"
-  
+   document.getElementById("goal6image").innerHTML="<img src='http://localhost:3000/images/Goal6.png' alt='Goal 1'>";
+   
 })
     }
 
@@ -217,8 +231,8 @@ return res.json();
         })
         .then(data => {
           goalpagedata = data;
-         
-         
+          document.getElementById("GoalTitle").textContent=goalpagedata.goal6page.EnglishTitle;
+          document.getElementById("Goalheader").textContent=goalpagedata.goal6page.EnglishHeader; 
           document.getElementById("GoalQuestion").textContent=goalpagedata.goal6page.englishGoalQuestion;
           document.getElementById("GoalAnswer").textContent=goalpagedata.goal6page.englishGoalAnswer;
           document.getElementById("GoalWhy").textContent=goalpagedata.goal6page.englishGoalWhy;
@@ -234,6 +248,9 @@ return res.json();
         })
         .then(data => {
           goalpagedata = data;
+
+          document.getElementById("GoalTitle").textContent=goalpagedata.goal6page.frenchTitle;
+          document.getElementById("Goalheader").textContent=goalpagedata.goal6page.frenchHeader; 
           document.getElementById("GoalQuestion").textContent=goalpagedata.goal6page.frenchGoalQuestion;
           document.getElementById("GoalAnswer").textContent=goalpagedata.goal6page.frenchGoalAnswer;
           document.getElementById("GoalWhy").textContent=goalpagedata.goal6page.frenchGoalWhy;
