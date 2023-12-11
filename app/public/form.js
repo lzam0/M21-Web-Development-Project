@@ -92,4 +92,4 @@ const form = document.querySelector("#form");
 addEventListener('submit', processSubmit);
 
 // run different language
-fetchLanguageData();
+initLoad();
