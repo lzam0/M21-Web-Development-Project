@@ -147,3 +147,5 @@ function createContent(){
 }
   
 createContent();
+
+// what i need to do is then create h1 tags for goal-header and goal-title
