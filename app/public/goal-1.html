@@ -5,6 +5,7 @@
     <!-- Java Script -->
     <!-- <script src="goal.js" defer></script> -->
     <script src="hamburger.js" defer></script>
+    <script src="goals.js" defer></script>
 
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
@@ -16,7 +17,7 @@
     </title>>
 </head>
 
-<body>
+<body onload="initloadGoal1();">
     <nav>
 
         <h1 class="logo">Logo</h1>
@@ -32,12 +33,16 @@
           <li class="nav-bar active"><a href="goals.html">Goals</a></li>
           <li class="nav-bar"><a href="team.html">About us</a></li>
           <li class="nav-bar"><a href="form.html">Contact</a></li>
+          <select name="language" id="language" onchange="onClickLangGoal1(language.value)">
+            <option value="ENGLISH">ENGLISH</option>
+            <option value="FRENCH">FRENCH</option>
+          </select>
         </ul>
     </nav>
 
     <!-- Change ID for header/ banner change -->
     <header id="poverty"> 
-        <h1>Our Goals</h1>
+        <h1 id="goalheader"></h1>
     </header>
     
     <main>
@@ -51,62 +56,14 @@
             </div>
 
             <div class="goal-information">
-                <h2>What’s the goal here?</h2>
-
-                <p>
-                    To end poverty in all its 
-                    forms everywhere by 2030
-                </p>
-
-                <h2>
-                    Why?
-                </h2>
-
-                <p>
-                    In 2015, more than 700 million people, or 10 per cent of 
-                    the world population, lived 
-                    in extreme poverty, struggling to fulfil the most basic 
-                    needs like health, education, 
-                    and access to water and 
-                    sanitation, to name a few.
-                </p>
-
-                <p>
-                    However, the COVID-19 pandemic is reversing the trend 
-                    of poverty reduction with 
-                    tens of millions of people 
-                    in risk of being pushed 
-                    back into extreme poverty 
-                    - people living on less than 
-                    $1.90/day - causing the first 
-                    increase in global poverty 
-                    in more than 20 years.
-                </p>
-
-                <h2>So what can I do about it?</h2>
-
-                <p>
-                    Your active engagement 
-                    in policymaking can make 
-                    a difference in addressing 
-                    poverty. It ensures that 
-                    your rights are promoted 
-                    and that your voice is 
-                    heard, that intergenerational knowledge is 
-                    shared, and that innovation and critical thinking 
-                    are encouraged at all ages 
-                    to support transformational change in people’s 
-                    lives and communities
-                </p>
-
-                <p>
-                    To find out more 
-                    about Goal 1 and 
-                    other Sustainable 
-                    Development Goals visit:
-                </p>
-
-                <a href="http://www.un.org/sustainabledevelopment" id="link">http://www.un.org/sustainabledevelopment</a>
+                <h2 id="GoalQuestion"></h2>
+                <p id="GoalAnswer"></p>
+                <h2 id="GoalWhy"></h2>
+                <p id="GoalWhyResponse"></p>
+                <h2 id="GoalSolution"></h2>
+                <p id="GoalSolutionResponse"></p>
+                <p id="IntroLink"></p>
+                <a id="IntraLink2" href="http://www.un.org/sustainabledevelopment">http://www.un.org/sustainabledevelopment</a>
             </div>
         </div>
     </div>

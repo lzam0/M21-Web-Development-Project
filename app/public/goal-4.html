@@ -5,10 +5,11 @@
     <!-- Java Script -->
     <!-- <script src="goal.js" defer></script> -->
     <script src="hamburger.js" defer></script>
+    <script src="goals.js" defer></script>
 
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="meta-style.css">
+    <!--<link rel="stylesheet" href="meta-style.css">-->
 
     <!-- Page Title -->
     <title>
@@ -16,7 +17,7 @@
     </title>>
 </head>
 
-<body>
+<body onload="initloadGoal4();"> 
     <nav>
 
         <h1 class="logo">Logo</h1>
@@ -32,6 +33,10 @@
           <li class="nav-bar active"><a href="goals.html">Goals</a></li>
           <li class="nav-bar"><a href="team.html">About us</a></li>
           <li class="nav-bar"><a href="form.html">Contact</a></li>
+          <select name="language" id="language" onchange="onClickLangGoal4(language.value);">
+            <option value="ENGLISH">ENGLISH</option>
+            <option value="FRENCH">FRENCH</option>
+          </select>
         </ul>
     </nav>
 
@@ -51,50 +56,13 @@
             </div>
 
             <div class="goal-information">
-                <h2>What is the goal here?</h2>
-                <p>Ensure inclusive and quality education for all and 
-                    promote lifelong learning.
-                </p>
-
-                <h2>Why does education matter?</h2>
-
-                <p>
-                    Education enables 
-                    upward socioeconomic 
-                    mobility and is a key 
-                    to escaping poverty. 
-                </p>
-
-                <p>
-                    Education helps reduce 
-                    inequalities and reach gender 
-                    equality and is crucial 
-                    to fostering tolerance and 
-                    more peaceful societies.
-                </p>
-
-                <h2>What can we do?</h2>
-
-                <p>
-                    Ask our governments 
-                    to place education as a 
-                    priority in both policy 
-                    and practice. Lobby our 
-                    governments to make 
-                    firm commitments to 
-                    provide free primary 
-                    school education to all, 
-                    including vulnerable or 
-                    marginalized groups.
-                </p>
-
-                <p> 
-                    To find out more 
-                    about Goal #4 and 
-                    other Sustainable 
-                    Development Goals, visit: 
-                </p>
-
+                <h2 id="GoalQuestion"></h2>
+                <p id="GoalAnswer"></p>
+                <h2 id="GoalWhy"></h2>
+                <p id="GoalWhyResponse"></p>
+                <h2 id="GoalSolution"></h2>
+                <p id="GoalSolutionResponse"></p>
+                <p id="IntroLink"></p>
                 <a href="http://www.un.org/sustainabledevelopment" id="link">http://www.un.org/sustainabledevelopment</a>
             </div>
 

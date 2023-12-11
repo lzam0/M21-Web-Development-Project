@@ -8,15 +8,15 @@
 
     <!-- Java Script -->
     <script src="hamburger.js" defer></script>
-    <!-- <script src="goal.js" defer></script> -->
-
+    <script src="goals.js" defer></script>
+   
     <!-- Page Title -->
     <title>
         Goals
     </title>>
 </head>
 
-<body>
+<body onload="initload();">
     <nav>
 
         <h1 class="logo">Logo</h1>
@@ -32,31 +32,23 @@
           <li class="nav-bar active"><a href="goals.html">Goals</a></li>
           <li class="nav-bar"><a href="team.html">About us</a></li>
           <li class="nav-bar"><a href="form.html">Contact</a></li>
+          <select name="language" id="language" onchange="onClickLang(language.value)">
+            <option value="ENGLISH">ENGLISH</option>
+            <option value="FRENCH">FRENCH</option>
+          </select>
         </ul>
     </nav>
 
     <header>
-        <h1>Our Goals</h1>
+        <h1 id="goalheader"></h1>
     </header>
     
     <main>
     <div class="container">
-        <h1>What Goals did we pick?</h1>
-        <p>Click images to discover why!</p>
+        <h1 id="goaltitle"></h1>
+        <p id="goaldiscover"></p>
         <div class="goals-container">
-            <div class="goal-image">
-                <a href="goal-1.html">
-                    <img src="./images/Goal1.png" alt="Goal 1">
-                </a>
-
-                <a href="goal-4.html">
-                    <img src="./images/Goal4.png" alt="Goal 4">
-                </a>
-
-                <a href="goal-6.html">
-                    <img src="./images/Goal6.png" alt="Goal 6">
-                </a>
-            </div>
+            <div class="goal-image" id="goalimages"></div>
         </div>
     </div>
 

@@ -5,7 +5,7 @@
 <head>
     <!-- Java Script -->
     <script src="hamburger.js" defer></script>
-    <!-- <script src="goal.js" defer></script> -->
+    <script src="goals.js" defer></script>
 
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
@@ -17,7 +17,7 @@
     </title>>
 </head>
 
-<body>
+<body onload="initloadGoal6();">
     <nav>
 
         <h1 class="logo">Logo</h1>
@@ -33,6 +33,10 @@
           <li class="nav-bar active"><a href="goals.html">Goals</a></li>
           <li class="nav-bar"><a href="team.html">About us</a></li>
           <li class="nav-bar"><a href="form.html">Contact</a></li>
+          <select name="language" id="language" onchange="onClickLangGoal6(language.value);">
+            <option value="ENGLISH">ENGLISH</option>
+            <option value="FRENCH">FRENCH</option>
+          </select>
         </ul>
     </nav>
 
@@ -51,49 +55,13 @@
             </div>
 
             <div class="goal-information">
-                <h2>What’s the goal here?</h2>
-
-                <p>
-                    To ensure access to 
-                    safe water sources and 
-                    sanitation for all
-                </p>
-
-                <h2>Why?</h2>
-
-                <p>
-                    Access to water, sanitation and hygiene 
-                    is a human right.
-                </p>
-
-                <p>
-                    The demand for water 
-                    has outpaced population growth, and half 
-                    the world’s population 
-                    is already experiencing 
-                    severe water scarcity at 
-                    least one month a year. 
-                </p>
-
-                <h2>What can we do?</h2>
-                <p>
-                    Civil society organizations should work 
-                    to keep governments 
-                    accountable, invest in 
-                    water research and development, and promote 
-                    the inclusion of women, 
-                    youth and indigenous 
-                    communities in water 
-                    resources governance.
-                </p>
-
-                <p>
-                    To find out more 
-                    about Goal #6 and 
-                    the other Sustainable 
-                    Development Goals, visit:
-                </p>
-
+                <h2 id="GoalQuestion"></h2>
+                <p id="GoalAnswer"></p>
+                <h2 id="GoalWhy"></h2>
+                <p id="GoalWhyResponse"></p>
+                <h2 id="GoalSolution"></h2>
+                <p id="GoalSolutionResponse"></p>
+                <p id="IntroLink"></p>
                 <a href="http://www.un.org/sustainabledevelopment" id="link">http://www.un.org/sustainabledevelopment</a>
             </div>
         </div>
