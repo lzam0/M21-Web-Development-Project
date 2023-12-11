@@ -1,4 +1,5 @@
 {
+    
     "indexpage": {
       "english": "Sustainability is the goal we all share; existing together in harmony for as long as our planet would allow it. Sustainability is achieved and supported through three main factors: Social, Enviromental, and Economic. The consequences of ignoring the benefits of sustainability and allowing efforts towards it to stop, would include major enviromental problems such as climate change, loss of biodiversity, loss of ecosystem services, land degredation, and air and water pollution. That does not include the social issues that would be caused such as potential losses in rights to minority groups, lapses in social justice, losing social safety nets set up for vulnerable groups, and also a general lose in quality of life. However, the benefits of supporting sustainability are as wonderous as these problems would be catastrophic, potentially increasing the world happiness index and quality of life to hitherto unknown heights, returning biodiversity to the point at which it might have been centuries ago, allowing natural life to flourish and even return to the parts of the world it has been pushed out of, and lowering costs of living and education to a point where anyone could afford to live and learn whatever they might want.",
       "french": "La durabilité est l'objectif que nous partageons tous ; exister ensemble en harmonie aussi longtemps que notre planète le permettra. La durabilité est atteinte et soutenue par trois facteurs principaux: social, environnemental et économique. Les conséquences de l'ignorance des avantages de la durabilité et de l'arrêt des efforts en ce sens entraîneraient des problèmes environnementaux majeurs tels que le changement climatique, la perte de biodiversité, la perte de services écosystémiques, la dégradation des terres et la pollution de l'air et de l'eau. Cela n'inclut pas les problèmes sociaux qui en résulteraient, tels que la perte potentielle des droits des groupes minoritaires, les manquements à la justice sociale, la perte des filets de sécurité sociale mis en place pour les groupes vulnérables, ainsi qu'une perte générale de qualité de vie. Cependant, les avantages de soutenir la durabilité sont aussi merveilleux que ces problèmes seraient catastrophiques, augmentant potentiellement l'indice de bonheur mondial et la qualité de vie à des sommets jusqu'ici inconnus, ramenant la biodiversité au point où elle aurait pu être des siècles. il y a quelques années, en permettant à la vie naturelle de s'épanouir et même de revenir dans les régions du monde dont elle a été chassée, et en abaissant le coût de la vie et de l'éducation à un point tel que chacun pouvait se permettre de vivre et d'apprendre ce qu'il voulait.",
@@ -81,7 +82,28 @@
     "teamspage":{
 
     }
-    
+
+    "form":{
+        "englishContactHeaderLine":"Contact",
+        "englishConnectWith":"Connect with us!",
+        "englishJoinNewsletter":"Join our news letter",
+        "englishRequiredMarkedAsterisk":"Required information is marked with an asterisk(*)",
+        "englishFirstNameLine":"First Name*: ",
+        "englishLastNameLine":"Last Name*: ",
+        "englishEmailLine":"Email*: ",
+        "englishMessageLine":"Message*: ",
+        "englishSubmitButtonLine":"Submit"
+        
+        "frenchContactHeaderLine":"Contact",
+        "frenchConnectWith":"Connecte-toi avec nous!",
+        "frenchJoinNewsletter":"Rejoignez notre newsletter",
+        "frenchRequiredMarkedAsterisk":"Les informations obligatoires sont marquées d'un astérisque (*)",
+        "frenchFirstNameLine":"Prénom*: ",
+        "frenchLastNameLine":"Nom de famille*: ",
+        "frenchEmailLine":"E-mail*: ",
+        "frenchMessageLine":"Message*: ",
+        "frenchSubmitButtonLine":"Soumettre"
+    }
     
 
 
