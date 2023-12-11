@@ -136,7 +136,7 @@ return res.json();
    document.getElementById("GoalSolution").textContent=goalpagedata4.goal4page.englishGoalSolution;
    document.getElementById("GoalSolutionResponse").textContent=goalpagedata4.goal4page.englishGoalSolutionResponse;
    document.getElementById("IntroLink").textContent=goalpagedata4.goal4page.englishIntroLink;
-   document.getElementById("goalimages").innerHTML="<a href='goal-4.html'><img src='./images/Goal4.png' alt='Goal 4'></a>"
+   document.getElementById("goal-image").innerHTML="<a href='goal-4.html'><img src='./images/Goal4.png' alt='Goal 4'></a>"
    
 })
     }
@@ -202,6 +202,7 @@ return res.json();
    document.getElementById("GoalSolution").textContent=goalpagedata6.goal6page.englishGoalSolution;
    document.getElementById("GoalSolutionResponse").textContent=goalpagedata6.goal6page.englishGoalSolutionResponse;
    document.getElementById("IntroLink").textContent=goalpagedata6.goal6page.englishIntroLink;
+   document.getElementById("goal-image").innerHTML="<a href='goal-6.html'><img src='./images/Goal6.png' alt='Goal 6'></a>"
   
 })
     }
