@@ -64,8 +64,9 @@ function createContent(){
 }
 
 function onClickLang(UserOptions) {
-  if (UserOptions === 'ENGLISH' || UserOptions === 'FRENCH') {
-    updateContent(UserOptions.toLowerCase());
+  const language = UserOptions.toLowerCase();
+  if (language === 'english' || language === 'french') {
+    updateContent(language);
   } else {
     console.error('Invalid language option');
   }
