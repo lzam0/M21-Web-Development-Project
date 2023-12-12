@@ -1,6 +1,12 @@
 let formpagedata = {};
 
 function initLoad() {
+  // Grab form submit button
+  const form = document.querySelector("#form");
+
+  // event listenr when submit runs
+  addEventListener('submit', processSubmit);
+
   fetchLanguageData();
 }
 
@@ -77,19 +83,23 @@ function processSubmit(e){
 }
 
 function onTextReady(text){
-  alert("Form Submission Successful");
-  console.log("News Letter Signed Up");
+  importText(text);
 }
 
 function onResponse(response){
   return response.text();
 }
 
-// Grab form submit button
-const form = document.querySelector("#form");
+function importText(text){
+  let newP = document.createElement("p");
+  let findID = document.getElementById("form-submission");
 
-// event listenr when submit runs
-addEventListener('submit', processSubmit);
+  newP.style.cssText = "color: red;"
 
-// run different language
+  newP.textContent = text;
+
+  findID.append(newP);
+}
+
+// run
 initLoad();
