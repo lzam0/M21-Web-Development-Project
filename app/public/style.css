@@ -119,7 +119,31 @@ nav,
 
 /* Containers for website */
 
+/* Working */
+
 .card {
+  display: flex;
+}
+
+.container{
+  width: 80%;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 2%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  flex-direction: row;
+}
+
+.card{
+  text-align: center;
+  display: block;
+  width: 30%;
+  border: solid black 1.5px;
+  padding: 15px;
+  height: auto;
+}
+
+/* .card {
   display: flex;
 }
 
@@ -134,7 +158,7 @@ nav,
 
 .card .container{
   width: 30%;
-}
+} */
 
 .container h1{
   color: black;
@@ -221,38 +245,35 @@ nav,
 
 
 /* About Us */
-.team-container img{
-  width: 30%;
-  max-width: 100%;
-  height: 80%;
-  border-radius: 8px;
-  margin-right: 10px;
+.team-container {
+  display: flex;
+  justify-content: space-between;
 }
 
 .team-photo img{
-  width: 100%;
-}
-
-.team-header {
-    text-align: center;
-}
-
-.team-photo{
-  display:flex;
+  width: 450px;
+  height: 450px;
+  object-fit: cover;
+  padding-bottom: 20px;
+  border-radius: 20px;
 }
 
 .contact-person{
-  background-color: rgb(84, 126, 12);
-  color: black;
-  border:2px solid black;
-  border-radius: 5px;
-  padding:10px;
-  margin:2px;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  margin: auto;
+  border-radius: 20px;
+  margin-top: 10px;
+  padding: 10px;
   font-weight: bold;
+  color: white;
+  background-color: #84bc41;
+  text-decoration: none;
 }
 
-.contact-person a:hover{
-    background-color: aquamarine;
+.contact-person:hover{
+    background-color: #cde4b3;
     cursor: pointer;
 }
 
