@@ -100,6 +100,12 @@ function createContent(){
   // get information container
   const information = document.querySelector(".goal-information");
 
+  const goalHeader = document.createElement("h1");
+  goalHeader.id = "goal-header";
+
+  const goalTitle = document.createElement("h1");
+  goalTitle.id = "goal-title";
+
   // create new h2 tag
   const question = document.createElement("h2");
   question.id = "question";
@@ -135,6 +141,8 @@ function createContent(){
   link.href = "http://www.un.org/sustainabledevelopment";
 
   // display everything on the webpage
+  header.append(goalHeader);
+  information.append(goalTitle);
   information.append(question);
   information.append(answer);
   information.append(why);
