@@ -232,9 +232,9 @@ nav,
 }
 
 .team-photo img{
-  width: 450px;
-  height: 450px;
-  object-fit: cover;
+  width: 100%;
+  height: auto;
+  display:flex;
   padding-bottom: 20px;
   border-radius: 20px;
 }
