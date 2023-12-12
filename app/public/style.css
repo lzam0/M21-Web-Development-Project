@@ -119,8 +119,6 @@ nav,
 
 /* Containers for website */
 
-/* Working */
-
 .card {
   display: flex;
 }
@@ -142,23 +140,6 @@ nav,
   padding: 15px;
   height: auto;
 }
-
-/* .card {
-  display: flex;
-}
-
-.container{
-  width: 80%;
-  margin: 0 auto;
-  background-color: #fff;
-  padding: 2%;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  flex-direction: row;
-}
-
-.card .container{
-  width: 30%;
-} */
 
 .container h1{
   color: black;
