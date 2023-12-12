@@ -59,7 +59,7 @@ app.post('/form', jsonParser, (req, res) => {
             contentType: 'application/pdf'
         },
         {
-            filename: "newsletter.pdf2",
+            filename: "newsletter2.pdf",
             path: path.join(__dirname, 'public', 'images', 'newsletter2.pdf'),
             contentType: 'application/pdf'
         },
